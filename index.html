@@ -2,417 +2,282 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Imperial Code</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!--MENU C A B E Ç A L H O-->
-    <div class="conteudo-header">
-        <header>
-            <div class="logo">
-                <a href="#">Kim</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="selecionar()">INICIO</a></li>
-                    <li><a href="#sobremim" onclick="selecionar()">SOBRE MIM</a></li>
-                    <li><a href="#skills" onclick="selecionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="selecionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="selecionar()">PORTFOLIO</a></li>
-                    <li><a href="#contato" onclick="selecionar()">CONTATO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="logo.jpg" alt="pic">
+        <h3 class="name">Imperial Code</h3>
+        <p class="post">Desenvolvimento Web e projetos</p>
     </div>
 
-    <!--SECTION INICIO-->
-    <section id="inicio" class="inicio">
-        <div class="conteudo-banner">
-            <div class="conteudo-img">
-                <img src="img/c40f21b1-336f-4a36-b435-e7d10357bbef.jpg" alt="">
-            </div>
-            <h1>Joaquim</h1>
-            <h2>Programador web Jr & Web Designer</h2>
-            <div class="redes">
-                <a href="https://wa.me/5586999849081"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/nelsom.capitinga?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://instagram.com/nelsom.capitinga?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoaquim-dos-santos-ferreira-3bba07217&e=AT1sTx5xYga9MiiSd4GzvDhcIJyje_lyOMewc10thwdJjY3_7eP-1O_7GkiFddqAgEEAm64GxQ8Um1KG9ezfrk4LRa5cuG4UwDquYw"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#education">Nossos Projetos</a></li>
+            <li><a href="#portfolio">Equipe</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <h3>OLÀ !</h3>
+    <h1>SOMOS A <span>IMPERIAL CODE .</span></h1>
+    <p>
+        Somos Novos e Apaixonados Por Tecnologia, Acreditamos Que Atraves Da Paixão Por Desenvolvimento Podemos Mudar A Vida De Muitas Pessoas E Empresas, Vem Com A Gente E Vamos Juntos Construir O Futuro.
+    </p>
+    <a href="#about"><button class="btn">Sobre Nos <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>Sobre</span> Nos </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span></span> Imperial Code </h3>
+        <h3> <span></span> 1 Ano No Mercado </h3>
+        <h3> <span></span>Especialista em Desenvolvimento Web </h3>
+        <h3> <span></span>Especialista Em Mídias Digitais</h3>
+        <h3> <span></span>Foco No Seu Négocio </h3>
+        <h3> <span></span>Foco No Seu Cliente </h3>
+    </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>1+</span>
+            <h3>Anos de experiência</h3>
         </div>
-    </section>
 
-    <!--SOBRE MIM-->
-    <section id="sobremim" class="sobremim">
-        <div class="conteudo-seccion">
-            <h2>Sobre mim</h2>
-            <p><span>Olá, sou Joaquim Ferreira</span> Estudante do curso de Ciencia da computaçao, programador web jr & desingner estou em busca do meu primeiro emprego na área da tecnologia da informação.
-                este é meu Portifolio onde procuro demostrar um pouco das minhas habilidades e competencias, tambem tenho projetos pesoais feito para amigos que posuem pequenos negocios na area da manutencao automotiva .
-                Como linguagem de programaçao estou procurando me especializar cada ves mais em PHP porem tenho cursos tbm na linguagem de programação C#
-                banco de dados SQL logica de programacao .
-            </p>
-            <div class="fila">
-                <!--DADOS PESSOAIS-->
-                <div class="col">
-                    <h3>Dados Pessoais</h3>
-                    <ul>
-                        <li><strong>Masculino</strong>
-                            06-11-1990
-                        </li>
-                        <li><strong>Telefone</strong>
-                            869 99849081
-                        </li>
-                        <li><strong>E-mail</strong>
-                            joaquimferreira21349@gmail.com
-                        </li>
-                        <li><strong>Website</strong>
-                            www.exemplo.com
-                        </li>
-                        <li><strong>localizacao</strong>
-                            2820, Teresina, Piaui, Brasil
-                        </li>
-                        <li><strong>Cargo</strong>
-                            <span>PROGRAMADOR WEB JR E DESIGNER</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--INTERESES-->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="conteudo-intereses">
-                        <div class="interese">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JOGOS</span>
-                        </div>
-                        <div class="interese">
-                            <i class="fa-solid fa-music"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interese">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAGENS</span>
-                        </div>
-                        <div class="interese">
-                            <i class="fa-brands fa-android"></i>
-                            <span>ANDROIDE</span>
-                        </div>
-                        <div class="interese">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIVROS</span>
-                        </div>
-                        <div class="interese">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>AVENTURA</span>
-                        </div>
-                        <div class="interese">
-                            <i class="fa-solid fa-car"></i>
-                            <span>CARROS</span>
-                        </div>
-                        <div class="interese">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <button>
-                MEU CURRICULUM <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+        <div class="box">
+            <span>6+</span>
+            <h3>Projetos Concluído</h3>
         </div>
-    </section>
 
-    <!--SECAO SKILLS-->
-    <section class="skills" id="skills">
-        <div class="conteudo-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!--SKILSS TECNICAS-->
-                <div class="col">
-                    <h3>Skills Tecnicas</h3>
-                    <div class="skills">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>C Sharp</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>PHP</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--SKILSS PROFISIONAIS-->
-                <div class="col">
-                    <h3>Skills Profissionais</h3>
-                    <div class="skills">
-                        <span>Comunicaçao</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>Agilidade</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>Criatividade</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>Aprendizado Rápido</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>83%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="box">
+            <span>8+</span>
+            <h3>Clientes Satisfeitos</h3>
         </div>
-    </section>
 
-    <!-- SECAO CURRICULLUM-->
-    <section id="curriculum" class="curriculum">
-        <div class="conteudo-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col esquerda">
-                    <h3>Educação</h3>
-                    <div class="item esq">
-                        <h4>Ciencia da Computação</h4>
-                        <span class="casa">Faculdade Estácio</span>
-                        <span class="fecha">4ª Periodo - cursando</span>
-                        <p>Ingresse na faculdade em 2022.1 atualmente estou no quarto periodo do curso Bacharelado em Ciencias da Computação
-                            e cursei dois periodos de analise e desenvolvimentos de sistemas na UNOPAR, estudo por fora das materias da faculdade pois acredito
-                            que na área da tecnologia da informaçao a busca por conhecimento deve ser constante.
-
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item esq">
-                        <h4>Programador C# e PHP</h4>
-                        <span class="casa">Microlins</span>
-                        <span class="fecha">Curso profisionalizante - 76 H concluido 08/02/20 a 13/05/21</span>
-                        <p>Curso profissional feito na Microlins com duracao de 76 horas e certificado nacional.
-                            O curso foi constituido pelos módulos de : Lógica de programação , Programação visual Studio essencial ,
-                            Programação intermediario , Programação avancado I , Programação avancado II e Banco de dados SQL.
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item esq">
-                        <h4>Introdução a redes de computadores</h4>
-                        <span class="casa">Fundação Bradesco</span>
-                        <span class="fecha">Curso profisionalizante - 15 H  concluido 29/01/22 a 30/01/22</span>
-                        <p>Curso feito na escola virtual da fundação bradesco com duração de 15 horas constituido 
-                            pelos módulos de introdução a redes de computadores, fundamentos de redes , pilares da segurança da informção
-
-
-                            em ambientes infortazidos e engenharia social.
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col direita">
-                    <h3>Experiencia de trabalho</h3>
-                    <div class="item dir">
-                        <h4>Front End</h4>
-                        <span class="casa">projetos para pequenas empresas</span>
-                        <span class="fecha">Oficinas automotivas</span>
-                        <p>Site feito com HTML CSS e Javascript , projeto simples onde demostro todos os serviços que a oficina de 
-                            um amigo tem. Começei esse projeto como forma de me aperfeiçoar na linguagem de marcacao de hiper texto
-                            e de folha de estilo. apesar de simples foi um projeto demorado visto que ainda estava no basico dos meus estudos e conhecimentos.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-
-                    <div class="item dir">
-                        <h4>Front End</h4>
-                        <span class="casa">projetos para pequenas empresas</span>
-                        <span class="fecha">Hamburgueria</span>
-                        <p>Site feito com HTML CSS e Bootstrap  . Fiz esse projeto pra experimentar esse framework,
-                            tive um aumento de produção e gostei dos templates ja prontos pra usar, ele nao tem 
-                            redirecionamento de paginas porque é basico e fiz apenas pra ver na pratica algumas funcionalidades 
-                            do Bootstrap.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-
-                    <div class="item dir">
-                        <h4>Front End</h4>
-                        <span class="casa">projetos para pequenas empresas</span>
-                        <span class="fecha">Projeto Biblia</span>
-                        <p>Site fetito com liguagem de programação PHP e framework laravel.
-                            fiz esse projeto pra consumir API mais nao finalizei, tenho otros projetos
-                            em PHP mais especificamente em Sites e Landpages ,tbm tenho projetos tipo CRUD 
-                            para aprender ainda mais sobre BAnco de Dados , consultas , trigger ,views etc.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="box">
+            <span>1+</span>
+            <h3>Prêmios ganhos</h3>
         </div>
-    </section>
 
-    <!--SECCION P O R T I F O L I O -->
-    <section id="portfolio" class="portfolio">
-        <div class="conteudo-secao">
-            <h2>CERTIFICADOS</h2>
-            <div class="galeria">
-                <div class="projeto">
-                    <img src="img/microlins.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Programador C# e SQL</h3>
-                        <p>Presencial</p>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="img/educompany.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Manutenção de Smartphone</h3>
-                        <p>Presencial</p>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="img/bradesco-hardwere.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Hardwere e Softwere</h3>
-                        <p>Escola virtual Fundação Bradesco</p>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="img/bradesco-redes.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Redes de computadores</h3>
-                        <p>Escola virtual Fundação Bradesco</p>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="img/nota.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Aprovação no curso de Redes</h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="img/aprovacao.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Nota de Aprovação</h3>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> Alguns Dos Nossos <span>Projetos</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2024 - Concluído</span>
+        <h3>BotFy Gts</h3>
+        <p>Bate Papo Em Tempo Real Desenvolvido Em PHP Junto Com o Framework Laravel, Projeto Já Finalizado E Em Uso.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2024</span>
+        <h3>Sistema ERP - Em Desenvolvimento</h3>
+        <p>Sistema De Gestão De Negocios Voltado Para Pequenas E Medias Empresas Com A Finalidade De Controle De Todas As Areas Da Empresa Incluindo O Setor Financeiro.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2024</span>
+        <h3>Gerenciamento de Aluguel - Em Desenvolvimento</h3>
+        <p>Sistema Focado No Controle De Alugueis De Casas E Apartamentos Com Datas de Pagamentos E Mensalidades.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2024</span>
+        <h3>Venda de Veiculos - Concluído</h3>
+        <p>Sistema de Venda de Veiculos Com Painel Administrativo e Relatorio De Vendas, O Sistema Tambem Conta Com Filtros De Vendas Mensal Para Uma Melhor Vizualização Finançeira.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2024</span>
+        <h3>Clin Imperial - Em Análise</h3>
+        <p>Sistema Gerenciador de Consultorios Médicos e Oddontologicos Com Foco Em Todas As Areas Medicas Incluindo Estoque, Inventario, Setor De Medicamentos , Farmacia , etc. Projeto de Grande Porte.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2024</span>
+        <h3>Seu Projeto...</h3>
+        <p>Mude A Vida Da Sua Empresa e Traga Seu Projeto Para A Imperial Code, Nos Temos A Solução Digital Que Sua Empresa Precisa.</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> Nossa  <span>Equipe</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-psd/social-media-marketing-agency-web-design-template_23-2149073401.jpg?size=626&ext=jpg&ga=GA1.1.149240876.1647063688" alt="social">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-vector/flat-cms-web-template_23-2148806163.jpg?size=626&ext=jpg&ga=GA1.1.149240876.1647063688" alt="website">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-vector/set-modern-website-landing-page-design-templates-mobile-phone-tablet-with-gallery-articles-contact-form-flat-isolated-illustration_1284-60948.jpg?size=626&ext=jpg&ga=GA1.1.149240876.1647063688" alt="phones">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-psd/web-template-burger-restaurant_23-2148485059.jpg?size=626&ext=jpg&ga=GA1.2.149240876.1647063688" alt="phone">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-vector/flat-cms-content-landing-page_23-2148806201.jpg?size=626&ext=jpg&ga=GA1.2.149240876.1647063688" alt="food">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?size=626&ext=jpg&ga=GA1.2.149240876.1647063688" alt="lap">
+    </div>
+
+</div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>Nosso </span> Contato </h1>
+
+<div class="row">
+
+    <div class="content">
+
+        <h3 class="title">INFORMAÇÕES DE CONTATO</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> imperial.code@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i> +55 86 99832 xxxx</h3>
+            <h3> <i class="fas fa-phone"></i> +55 86 3236 xxxx </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> Teresina, Piaui - xxxx. </h3>
         </div>
-    </section>
 
-    <!--SECCION C O N T A T O -->
-    <section id="contato" class="contato">
-        <div class="conteudo-secao">
-            <h2>CONTATO</h2>
-            <div class="fila">
-                <!--F O R M U L A R I O-->
-                <div class="col">
-                    <input type="text" placeholder="Seu Nome">
-                    <input type="text" placeholder="Número">
-                    <input type="text" placeholder="Endereço">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                    <a href="https://wa.me/5586999849081"><button>Enviar Mensagem  
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span class="overlay"></span>
-                    </button></a>
-                        
-                </div>
-                <!--M A P A-->
-                <div class="col">
-                    <img src="img/local.jpg" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-sharp fa-solid fa-location-dot"></i>
-                                Dirceu 2820, Teresina-Pi
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                86 999849081
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: joaquimferreira21349@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <!--F O O T E R-->
-    <footer>
-        <a href="#inicio" class="encima">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://wa.me/5586999849081"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/nelsom.capitinga?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoaquim-dos-santos-ferreira-3bba07217&e=AT1sTx5xYga9MiiSd4GzvDhcIJyje_lyOMewc10thwdJjY3_7eP-1O_7GkiFddqAgEEAm64GxQ8Um1KG9ezfrk4LRa5cuG4UwDquYw"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/nelsom.capitinga?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-        </div>
-    </footer>
+    <form action="">
 
-    <script src="script.js"></script>
+        <input type="text" placeholder="nome" class="box">
+        <input type="email" placeholder="e-mail" class="box">
+        <input type="text" placeholder="projeto" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="mensagem"></textarea>
+<button type="submit" class="btn" > Enviar <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+
+    <!----------------------------------------------------------------  
+</div>
+<br>
+<h1 style="text-align:center">Quer saber mais sobre nossa empresa?</h1>
+<div class ="signup">
+    <div class="leftbox">
+        <h1>Inscrever-se</h1>
+        <input type="text" class="input-box"placeholder="Nome de Usuario">
+        <input type="email" class="input-box"placeholder="E-mail">
+        <input type="password" class="input-box"placeholder="Senha">
+        <input type="password" class="input-box"placeholder="Confirmar Senha">
+<div class="or">OU</div>
+        <a href="#">
+        <input type="submit" class="submitbox" placeholder="Inscreva-se" ></a>
+    </div>
+    <div class="rightbox">
+        <span class="right-title">Inscreva-se com sua <br>Rede Social</span>
+    <a htef="#"><button class="social facebook">Entrar com Facebook</button></a>
+    <a href="#"><button class="social twitter">Entrar com Twitter</button></a>
+    <a href="#"> <button class="social google">Entrar com Google</button></a>
+    </div>
+<div class="or">OU</div>
+</div> ------------------------------------------------------->
+
+</section>
+
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <img src="scroll-top-img.png" alt="airoplane">
+</a>
+<footer>
+    <p class="text-white tm-footer-text">
+       Copyright &copy; 2024 Imperial Code . Design:<a href="imperial.code@gmail.com"class="footer-link">IMPERIAL CODE </a>
+    </p>
+</footer>
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+
 </body>
 </html>
